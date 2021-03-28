@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Create password"
+        android:layout_centerHorizontal="true"></TextView>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:lines="2"
+        android:text="Please make it a strong one, and make sure not to forget it"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textSize="@dimen/_15ssp"
+        android:singleLine="false"
+        android:layout_below="@id/textView"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/textView2"
+        android:id="@+id/layout1"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Mobile number"
+        android:paddingStart="10dp"
+        android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout1"
+        android:id="@+id/layout2"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout2"
+        android:id="@+id/layout3"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape"
+            android:ems="5"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingStart="10dp"
+
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout3"
+        android:id="@+id/layout4"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Your Name"
+            android:paddingStart="10dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/button_shape"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/button"
+        android:layout_below="@id/layout4"></Button>
+
+</RelativeLayout>
